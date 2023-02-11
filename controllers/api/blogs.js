@@ -1,10 +1,7 @@
-require('dotenv').config()
-const Blog = require('../../models/blog')
-const User = require('../../models/user')
 
-// delete blog
-// create blog
-// update blog
+const Blog = require('../../models/blog')
+
+
 
 const destroyBlog = async (req, res, next) => {
   try {

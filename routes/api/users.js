@@ -15,8 +15,8 @@ Login
 router.post('/login', userCtrl.login, userCtrl.respondWithToken)
 /*
 /api/users/blogs
-Get Bookmarks By User
+Get Blogs By User
 */
-router.get('/blogs', checkToken, ensureLoggedIn, userCtrl.getBookmarksByUser, userCtrl.respondWithBookmarks)
+router.get('/blogs', checkToken, ensureLoggedIn, userCtrl.getBlogsByUser, userCtrl.respondWithBlogs)
 
 module.exports = router
